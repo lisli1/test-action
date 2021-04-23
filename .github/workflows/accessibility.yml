@@ -1,0 +1,36 @@
+name: Accessibility Validation
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches: 
+      - '**'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    
+    - name: Scan for A11y issues
+      uses: microsoft/accessibility-insights-action@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        site-dir: ${{ github.workspace }}
+        
+    - name: Upload report artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+      # Artifact name
+        name: accessibility-reports
+      # Directory containing files to upload
+        path: ${{ github.workspace }}/_accessibility-reports  
