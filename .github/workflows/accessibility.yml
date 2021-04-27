@@ -26,7 +26,6 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         site-dir: ${{ github.workspace }}
-        url: https://www.washington.edu/accesscomputing/AU/before.html
         
     - name: Upload report artifact
       uses: actions/upload-artifact@v1.0.0
