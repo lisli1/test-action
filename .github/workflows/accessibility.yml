@@ -22,7 +22,7 @@ jobs:
         node-version: 12.x
     
     - name: Scan for A11y issues
-      uses: lisli1/accessibility-insights-action@main
+      uses: lisli1/accessibility-insights-action@v1-lockfile
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         site-dir: ${{ github.workspace }}
