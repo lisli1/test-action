@@ -25,7 +25,7 @@ jobs:
       uses: lisli1/accessibility-insights-action@main
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        site-dir: ${{ github.workspace }}
+        url: https://accessibilityinsights.io/
         
     - name: Upload report artifact
       uses: actions/upload-artifact@v1.0.0
