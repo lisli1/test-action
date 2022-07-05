@@ -25,6 +25,7 @@ jobs:
         with:
           # Provide either static-site-dir or url
           static-site-dir: ${{ github.workspace }}/public
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           # url: your-website-url
           # static-site-url-relative-path: "/"
 
