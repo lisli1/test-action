@@ -25,6 +25,7 @@ jobs:
         with:
           # Provide either static-site-dir or url
           # static-site-dir: ${{ github.workspace }}/public
+          hosting-mode: dynamicSite
           url: https://accessibilityinsights.io/
           # static-site-url-relative-path: "/"
 
