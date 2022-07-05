@@ -24,7 +24,7 @@ jobs:
         uses: microsoft/accessibility-insights-action@v3.0.0-staging
         with:
           # Provide either static-site-dir or url
-          static-site-dir: ${{ github.workspace }}
+          static-site-dir: ${{ github.workspace }}/public
           # url: your-website-url
           # static-site-url-relative-path: "/"
 
