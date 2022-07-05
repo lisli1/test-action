@@ -28,6 +28,8 @@ jobs:
           # url: https://accessibilityinsights.io/
           # static-site-url-relative-path: "/"
 
+          fail-on-accessibility-error: true
+
       - name: Upload report artifact
         if: success() || failure()
         uses: actions/upload-artifact@v3
