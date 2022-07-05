@@ -24,9 +24,9 @@ jobs:
         uses: microsoft/accessibility-insights-action@v3.0.0-staging
         with:
           # Provide either static-site-dir or url
-          static-site-dir: ${{ github.workspace }}/public
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          # url: your-website-url
+          # static-site-dir: ${{ github.workspace }}/public
+          hosting-mode: dynamic-site
+          url: https://accessibilityinsights.io/
           # static-site-url-relative-path: "/"
 
           fail-on-accessibility-error: false
