@@ -21,7 +21,7 @@ jobs:
             # Insert any jobs here required to build your website files
 
             - name: Scan for accessibility issues
-              uses: microsoft/accessibility-insights-action@v3.0.0-staging
+              uses: microsoft/accessibility-insights-action@v2
               with:
                   # Provide either static-site-dir or url
                   static-site-dir: ${{ github.workspace }}/public
