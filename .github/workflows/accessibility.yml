@@ -27,6 +27,7 @@ jobs:
           site-dir: ${{ github.workspace }}/public
           # url: https://accessibilityinsights.io/
           # static-site-url-relative-path: "/"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload report artifact
         if: success() || failure()
