@@ -27,7 +27,7 @@ jobs:
           static-site-dir: ${{ github.workspace }}/public
           hosting-mode: staticSite
           # url: https://accessibilityinsights.io/
-          # static-site-url-relative-path: "/"
+          static-site-url-relative-path: /
 
           fail-on-accessibility-error: false
 
