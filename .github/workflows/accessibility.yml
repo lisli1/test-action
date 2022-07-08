@@ -27,6 +27,7 @@ jobs:
           # static-site-dir: ${{ github.workspace }}/public
           hosting-mode: dynamicSite
           url: https://accessibilityinsights.io/
+          scan-timeout: 180000
           # static-site-url-relative-path: "/"
 
           fail-on-accessibility-error: false
